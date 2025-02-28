@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Describe your experience with this form, it will only take you 5 minutes</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label id="name-label" for="name">Name<input type="text" id="name" placeholder="Type your name" required/>
+        </label>
+        <label id="email-label" for="email">Email<input type="email" id="email" placeholder="Type your mail" required/>
+        </label>
+        <label id="number-label" for="age">Age<input type="number" id="number" placeholder="How old are you?" min="18" max="115"required/>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">Choose your experience
+          <select id="dropdown" required>
+            <option value="">Select one</option>
+            <option value="1">Breakfast</option>
+            <option value="2">Lunch</option>
+            <option value="3">Dinner</option>
+          </select>
+        </label>
+        <label for="finger-foods"><input type="checkbox" class="inline" id="finger-foods" value="finger-foods">Finger Foods</label>
+        <label for="main-courses"><input type="checkbox" class="inline" id="main-courses" value="main-courses">Main courses</label>
+        <label for="second-courses"><input type="checkbox" class="inline" id="second-courses" value="second-courses">Second courses</label>
+        <label for="contours"><input type="checkbox" class="inline" id="contours" value="contours">Contours</label>
+        <label for="desserts"><input type="checkbox" class="inline" id="desserts" value="desserts">Desserts</label>
+
+      </fieldset>
+      <fieldset>
+        <label for="bad"><input type="radio" class="inline" id="bad" value="bad" name="review-choice"/>Bad</label>
+        <label for="not-bad"><input type="radio" class="inline" id="not-bad" value="not-bad"  name="review-choice"/>Not bad</label>
+        <label for="good"><input type="radio" class="inline" id="good" value="good"  name="review-choice"/>Good</label>
+        <label for="excellent"><input type="radio" class="inline" id="excellent" value="excellent"  name="review-choice"/>Excellent</label>
+        </fieldset>
+        
+          <label for="suggests"> Write comments or suggestions to improve us
+            <textarea id="suggests" placeholder="I didn't like it because..."></textarea>
+        </label>
+       
+        <input type="submit" id="submit" value="Submit"/>
+  </form>
+  </body>
+</html>
